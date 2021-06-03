@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+        body {
+            background-color: grey;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            color: antiquewhite
+        }
+        .barmenu {
+            background-color: green;
+            overflow: hidden;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        .barmenu li {
+            display: inline-block;
+            width: 100px;
+            height: 40px;
+        }
+        .barmenu a {
+            text-decoration: none;
+        }
+        ul a:hover {
+            background-color: antiquewhite;
+        }
+        </style>
+        <title>flask jinja test</title>
+    </head>
+    <body>
+        <ul class="barmenu">
+            <li><a href="/">home</a></li>
+            <li><a href="#other">other</a></li>
+            <li><a href="about">about</a></li>
+            <li><a href="#fafafa">aaaa</a></li>
+        </ul>
+        <p>fr es h av a cad o</p>
+        <p>hey guys welcome to: {{a}}</p>
+        <ul>
+            <li>welcome to the about page</li>
+            {% for i in l %}
+            <li>{{i}}</li>
+            {% endfor %}
+        </ul>
+    </body>
+</html>
